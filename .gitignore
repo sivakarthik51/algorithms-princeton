@@ -1,0 +1,6 @@
+.java-version
+
+*.class
+*.zip
+
+input/
