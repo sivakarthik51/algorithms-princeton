@@ -101,7 +101,7 @@ public class Board
     {
         if ( y == this )
             return true;
-        if ( y == null || y.getClass() != getClass() || y.dimension() != dimension())
+        if ( y == null || y.getClass() != getClass() || ((Board) y).n != n)
         {
             return false;
         }
@@ -182,7 +182,7 @@ public class Board
             twinBoard[0][1] = tiles[0][0];
         }
         else {
-            twinBoard[1][0] = tiles[1][1]
+            twinBoard[1][0] = tiles[1][1];
             twinBoard[1][1] = tiles[1][0];
         }
 
